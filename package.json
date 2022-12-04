@@ -1,0 +1,23 @@
+{
+  "name": "employee_tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "serve.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nevin-Lewis/Employee_tracker.git"
+  },
+  "author": "Nevin Lewis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nevin-Lewis/Employee_tracker/issues"
+  },
+  "homepage": "https://github.com/Nevin-Lewis/Employee_tracker#readme",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
