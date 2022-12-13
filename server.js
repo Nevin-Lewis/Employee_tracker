@@ -1,9 +1,7 @@
 const express = require('express');
 // Import and require mysql2
-const mysql = require('mysql2');
-const inquirer = require('inquirer');
-const cTable = require('console.table');
-const Next = require('./src/code.js')
+const Next = require('./src/code.js');
+require('dotenv').config();
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -12,7 +10,6 @@ const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+// Next.Test();
 
-
-
-Next.Start
+Next.Start()
