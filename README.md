@@ -25,7 +25,7 @@ Then navigate into the cloned folder and run:
 ```
 npm i
 ```
-Then rename the .env.SAMPLE file to  .env file.
+Then rename the .env.SAMPLE file to .env.
 Update the password with your own MYSQL password
 Save your file
 
