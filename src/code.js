@@ -118,16 +118,12 @@ function add_employee(){
                 value: id
             });
             });
-    db.query('SELECT employee_id, CONCAT(first_name, " ", last_name) AS name  FROM EMPLOYEE WHERE (EMPLOYEE_ID IN (SELECT MANAGER_ID FROM EMPLOYEE));', (err, results) => {
-            managers = [];
-            managers.push({
-                name: "None",
-                value: null
-            });
-            results.forEach(({name, employee_id}) =>
-            {managers.push({
-                name : name,
-                value: employee_id
+        db.query('SELECT employee_id, CONCAT(first_name, " ", last_name) as name FROM employee', (err, results) => {
+                managers = [];
+                results.forEach(({name, employee_id}) =>
+                {managers.push({
+                    name : name,
+                    value: employee_id
                 });
                 });
     inquirer
