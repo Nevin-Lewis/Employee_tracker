@@ -120,6 +120,7 @@ function add_employee(){
             });
         db.query('SELECT employee_id, CONCAT(first_name, " ", last_name) as name FROM employee', (err, results) => {
                 managers = [];
+                managers.push("null")
                 results.forEach(({name, employee_id}) =>
                 {managers.push({
                     name : name,
