@@ -15,21 +15,23 @@ This is the readme for the Employee tracker app generator app. After copying the
 * [Questions](#questions)
 
 ## Installation
-To install necessary depnedencies, run the follow commands:
+To install necessary depnedencies, run the follow commands in the terminal of your desired folder:
 
 ```
 git clone git@github.com:Nevin-Lewis/Employee_tracker.git
 ```
-Then run
+Then navigate into the cloned folder and run:
 
 ```
 npm i
 ```
-Then add a .env file with the following parameter DB_PASSWORD ='INSERT PASSWORD HERE'
+Then rename the .env.SAMPLE file to .env.
+Update the password with your own MYSQL password
+Save your file
 
 ## Usage
 
-To start this program run
+To start this program from the employee_db folder terminal run
 
 ```
 mysql -u root -p
@@ -67,7 +69,8 @@ MIT License
 </details>
 
 ## Contributing
-test
+
+Feel free to copy, or fork this repo. Make any changes that you would like and use it freely.
 
 ## Test
 To run test, run the following command:
@@ -75,6 +78,9 @@ To run test, run the following command:
 ```
 N/A
 ```
+
+[Untitled_ Jan 2 2023 8_12 AM.webm](https://user-images.githubusercontent.com/64855834/210243039-6096e4a6-6320-4ac1-b70b-4e68bc5b5b50.webm)
+
 
 ## Questions
 If you have any quetsions about the repo, open an issue or contact me directly at github.com/nevin-lewis
